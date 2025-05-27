@@ -61,7 +61,7 @@ This project is a minimalist replica of an on-demand food delivery web applicati
 ## Technology Stack
 
 - **Backend:** Python 3.9, Flask  
-- **Database:** MySQL (`mysql-connector-python`)  
+- **Database:** MySQL  
 - **Session Store & Rate Limit:** Redis  
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript, MojoCSS  
 - **Templating:** Jinja2  
@@ -87,20 +87,19 @@ Use the following demo accounts to log in as different roles:
    ```bash
    git clone https://github.com/jannkas/security_exam.git
    cd security_exam
-
 2. **Build and run with Docker**  
+   ```bash
     docker compose up --build
-
 3. **Seed the database**
+   ```bash
     # open a shell inside the Flask container
     docker exec -it wolt_flask /bin/bash
-
     # from inside the container, run:
     python seed.py
-
+    # Exit
 4. **Configure .env**
+   ```bash
     # Create a file named .env in the project root with:
     SECRET_KEY="your-own-random-uuid4"
-
 4. **Browse the app**
     Open your browser at http://localhost/ to explore the Wolt Replica.
